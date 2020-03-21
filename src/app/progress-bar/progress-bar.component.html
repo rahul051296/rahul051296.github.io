@@ -1,0 +1,11 @@
+<div class="progress-bar-container">
+    <div class="p-b-5">
+        <span>{{options.title}}</span>
+        <span class="float-right"><i [class]="options.icon" style="font-size: 20px;"></i></span>
+    </div>
+    <div class="custom-progress-bar" [ngClass]="{'custom-progress-bar-dark': theme == 'dark'}">
+        <span class="custom-progress-bar-slider" [ngStyle]="{'width': options.value + '%'}">
+            <span class="color-fill"></span>
+        </span>
+    </div>
+</div>

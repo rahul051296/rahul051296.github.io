@@ -1,0 +1,23 @@
+.code-editor-container {
+    width: 100%;
+    max-height: 100%;
+    /* box-shadow: 0px 0px 6px 0 #0c0c0c, 0px 0px 6px 0 #131313; */
+}
+
+.toolbar {
+    background: #3C3C3C;
+    height: 30px;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.editor-body-container {
+    padding: 20px 10px;
+    background: #222222;
+    border-radius: 0 0 8px 8px;
+    ;
+}
+
+.toolbar-buttons {
+    float: right;
+    margin-top: 5px;
+}

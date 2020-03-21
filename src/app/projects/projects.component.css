@@ -1,0 +1,130 @@
+.project-title {
+    font-weight: 600;
+    padding-top: 1em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.projects-container {
+    color: #343434;
+}
+
+.projects-container-dark {
+    color: #c8c8c8
+}
+
+.service-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.am-title {
+    padding-top: 20px;
+    font-weight: 500;
+    font-size: 1.2em;
+    display: inline-block;
+    border-bottom: 3px solid #10B299;
+}
+
+.service-box {
+    padding: 20px;
+    border-radius: 16px;
+    width: 100%;
+    margin: 16px;
+    text-align: center;
+}
+
+.service-box>img {
+    width: 60%;
+    min-height: 200px;
+    align-items: center;
+    opacity: 0.85;
+}
+
+.service-description {
+    min-height: 150px;
+    margin-top: 8px;
+}
+
+.service-description>p {
+    padding: 8px;
+}
+
+.project-box {
+    padding: 10px;
+    border-radius: 8px;
+    margin: 16px 0;
+    background: #ebebeb;
+    text-align: center;
+    box-shadow: 5px 5px 12px #bdbdbd, -5px -5px 12px #ffffff;
+}
+
+.project-box-dark {
+    background: #1C1C1C;
+    box-shadow: 5px 5px 9px #111111, -5px -5px 9px #272727;
+}
+
+.project-desc {
+    margin-top: 8px;
+    /* padding: 8px; */
+}
+
+.project-desc h5 {
+    color: #10b299;
+}
+
+.project-desc p {
+    opacity: 0.8;
+    font-size: 0.9em;
+    margin: 8px 0 0 0;
+    text-align: justify;
+    min-height: 65px;
+}
+
+.project-box img {
+    border-radius: 8px;
+    /* width: 70%; */
+    height: 200px;
+    object-fit: contain;
+    -webkit-box-align: center;
+    align-items: center;
+    opacity: 0.85;
+}
+
+.view-btn {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 8px;
+    margin-right: 8px;
+    font-size: 0.9em;
+    opacity: 0.6;
+    font-weight: 600;
+}
+
+.tags {
+    padding: 2px 5px;
+    font-size: 13px;
+    display: inline-block;
+    border-radius: 4px;
+    color: #fff;
+    background: #009688;
+    /* box-shadow: 5px 5px 12px #bdbdbd, -5px -5px 12px #ffffff; */
+}
+
+.tags-container {
+    margin: 8px 2px;
+}
+
+@media only screen and (max-width:992px) {
+    .service-container {
+        flex-direction: column;
+        /* padding: 2.5em; */
+    }
+    .service-description {
+        min-height: auto;
+    }
+}

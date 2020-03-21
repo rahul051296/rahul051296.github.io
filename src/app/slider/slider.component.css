@@ -1,0 +1,110 @@
+.theme-container {
+    height: 100%;
+    width: 100%;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    border-radius: 8px;
+    position: relative;
+    font-weight: 600;
+}
+
+.light-theme-container {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    padding: 12px;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.dark-theme-container {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    padding: 12px;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.slider {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    border-radius: 8px;
+}
+
+.slider-light-button {
+    background: #E4E4E4;
+    box-shadow: 5px 5px 16px #5b5b5b, -5px -5px 16px #ffffff;
+}
+
+.slider-dark-button {
+    background: #1C1C1C;
+    box-shadow: 5px 5px 9px #111111, -5px -5px 9px #272727;
+}
+
+.slide-right {
+    animation: slide-right-animation .5s forwards;
+}
+
+.slide-left {
+    animation: slide-left-animation .5s forwards;
+}
+
+.slider-dark {
+    background: #1C1C1C;
+    box-shadow: inset 5px 5px 9px #111111, inset -5px -5px 9px #272727;
+}
+
+.slider-light {
+    background: #E4E4E4;
+    box-shadow: inset 5px 5px 12px #bdbdbd, inset -5px -5px 12px #ffffff;
+}
+
+.text--white {
+    color: #ffffff !important;
+}
+
+.text-white-muted {
+    color: #ffffff80 !important;
+}
+
+.text--dark {
+    color: #000000 !important;
+}
+
+.text-dark-muted {
+    color: #00000080 !important;
+}
+
+@keyframes slide-right-animation {
+    from {
+        background: #E4E4E4;
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(100%);
+        color: #ffffff;
+        background: #1c1c1c;
+        box-shadow: 5px 5px 16px #0b0b0b, -5px -5px 16px #2d2d2d;
+    }
+}
+
+@keyframes slide-left-animation {
+    from {
+        background: #1C1C1C;
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+        background: #E4E4E4;
+        box-shadow: 5px 5px 16px #5b5b5b, -5px -5px 16px #ffffff;
+    }
+}
