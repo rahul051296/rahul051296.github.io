@@ -5,8 +5,7 @@
             <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3" *ngFor="let project of projectData">
                 <div>
                     <div class="project-box" [ngClass]="{'project-box-dark': theme == 'dark'}">
-                        <img src="./assets/img/{{project.imgSrc}}" class="img-fluid" alt="" [ngStyle]="{visibility:isLoading?'hidden':''}" (load)="hideLoader()" (error)="hideLoader()">
-                        <div *ngIf="!isLoading">Test</div>
+                        <img src="./assets/img/{{project.imgSrc}}" class="img-fluid" alt="">
                         <div class="project-desc">
                             <h5>{{project.name}}</h5>
                             <span class="tags-container" *ngFor="let tag of project.tags">

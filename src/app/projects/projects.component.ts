@@ -10,10 +10,9 @@ import { Router } from '@angular/router';
 export class ProjectsComponent implements OnInit {
   theme: any;
   projectData: any = {};
-  isLoading: boolean;
 
   constructor(private router: Router, private commonService: CommonService) {
-    this.isLoading = true;
+  
   }
 
   ngOnInit(): void {
@@ -23,12 +22,7 @@ export class ProjectsComponent implements OnInit {
     });
     this.getProjectData();
   }
-
-
-  hideLoader() {
-    this.isLoading = false;
-  }
-
+  
   onOpenMenu() {
     this.router.navigate(['menu']);
   }
@@ -96,6 +90,23 @@ export class ProjectsComponent implements OnInit {
           direct: {
             value: true,
             link: "https://the-hub-social.000webhostapp.com/"
+          }
+        }
+      },
+      {
+        id: 3,
+        name: "COVID-19 Stats",
+        imgSrc: "covid.png",
+        tags: ["Web App"],
+        description: "A web-app to tracks the real-time spread of COVID-19 (Coronavirus)",
+        links: {
+          github: {
+            value: true,
+            link: "https://github.com/rahul051296/covid19-stats"
+          },
+          direct: {
+            value: true,
+            link: "http://rahulprabhakar.in/covid19-stats/"
           }
         }
       },
