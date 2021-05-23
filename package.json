@@ -3,7 +3,7 @@
     "version": "0.0.0",
     "scripts": {
         "ng": "ng",
-        "build-prod": "ng build --prod --base-href 'http://rahulprabhakar.in/portfolio-v2/'",
+        "build-prod": "ng build --prod --base-href 'https://rahulprabhakar.in/'",
         "deploy": "ngh --branch=master",
         "start": "ng serve",
         "build": "ng build",
